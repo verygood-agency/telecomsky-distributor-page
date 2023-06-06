@@ -1,0 +1,394 @@
+.cinemas {
+  display: inline-block;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.tariff-long-item__name .cinemas {
+  margin-left: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.swiper-button-disabled {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.slider .hidden {
+  display: flex;
+}
+
+.header__support-list {
+  z-index: 10;
+}
+
+.tariff-text ul {
+  padding-inline-start: 15px;
+}
+
+.tariff-text li {
+  margin-bottom: 12px;
+  color: #727881;
+  font-size: 14px;
+}
+
+.btn-white {
+  background: white;
+  color: #ef3024;
+}
+
+/* правки от 18.04.2023  */
+.header__social-link,
+.header__city,
+.header__support summary {
+  transition: all 0.3s;
+
+}
+
+.header__social-link:hover,
+.header__social-link:focus,
+.header__social-link:active,
+.header__support summary:hover,
+.header__support summary:focus,
+.header__support summary:active,
+.header__city:hover,
+.header__city:focus,
+.header__city:active {
+  color: #C70000;
+}
+
+.phone {
+  transition: all 0.3s;
+}
+
+.phone:hover,
+.phone:active,
+.phone:focus {
+  color: #C70000;
+}
+
+.slider-promo__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s;
+  background: #f7f8fb;
+}
+
+.slider-promo__card:hover,
+.slider-promo__card:active,
+.slider-promo__card:focus {
+  background: linear-gradient(0deg, rgba(7, 14, 43, 0.05), rgba(7, 14, 43, 0.05)), #F7F8FB;
+}
+
+.slider-promo__card .button {
+  margin-top: auto;
+}
+
+input {
+  border: 1px solid transparent !important;
+  border-radius: 24px;
+  transition: all 0.3s;
+}
+
+input:hover {
+  border-color: #28303D !important;
+  background: #ffffff;
+}
+
+input:active,
+input:focus {
+  border-color: #28303D !important;
+  border-width: 2px !important;
+  color: #28303D;
+  background: #ffffff;
+}
+
+label a {
+  transition: all 0.3s;
+}
+
+label a:hover {
+  color: #C70000;
+}
+
+.swiper-slide .equip {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.swiper-slide .equip img {
+  transition: all 0.4s;
+  border-radius: 12px;
+}
+
+.swiper-slide .equip .equip__photo {
+  overflow: initial;
+}
+
+.swiper-slide .equip:hover img {
+  scale: 1.05;
+  width: calc(100% + 2%);
+  height: calc(100% + 2%);
+}
+
+.footer .navigation-list li:last-of-type .footer__navigation-link {
+  margin-bottom: 0;
+
+}
+
+.footer__buttons {
+  grid-template-columns: auto auto;
+  margin-left: auto;
+  max-width: max-content;
+}
+
+.footer__navigation-link {
+  transition: all 0.3s;
+}
+
+.footer .footer__navigation-link:hover,
+.footer .footer__navigation-link:focus,
+.footer .footer__navigation-link:active {
+  color: #EF3024;
+}
+
+.footer__support a {
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.footer__support a:hover,
+.footer__support a:focus,
+.footer__support a:active {
+  color: #EF3024;
+}
+
+.footer .phone--icon:before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3e%3cpath fill='%23EF3024' d='M5.019 10.98c4.078 4.079 7.974 4.942 9.412 5.02A10.53 10.53 0 0 0 16 12.55c-.993-.968-2.44-1.955-3.765-2.51l-1.568 1.568c-.536-.144-2.007-.752-3.765-2.51C5.144 7.34 4.536 5.87 4.392 5.333l1.569-1.568C5.405 2.439 4.418.993 3.45 0 2.458.261 1.346.65 0 1.569c.078 1.437.94 5.333 5.019 9.412Z'/%3e%3c/svg%3e");
+}
+
+.header__buttons .button {
+  padding: 12px 16px;
+}
+
+@media (max-width: 1550px) {
+  .header__navigation li:not(:last-child) a {
+    margin-right: 20px;
+  }
+
+  .header .navigation-list a,
+  .mobile-nivigation__support-grid a {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+
+@media (min-width: 1355px) {
+  .header__navigation .navigation-list a {
+    position: relative;
+    z-index: 2;
+
+  }
+
+  .header__navigation .navigation-list a span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .header__navigation .navigation-list a::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: calc(100% + 24px);
+    height: calc(100% + 24px);
+    background: #C70000;
+    border-radius: 24px;
+    left: -12px;
+    top: -12px;
+    z-index: 0;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .header__navigation .navigation-list a:hover {
+    color: #ffffff;
+  }
+
+  .header__navigation .navigation-list a:hover::before {
+    opacity: 1;
+    visibility: initial;
+  }
+}
+
+.filter .filter__flex--mod {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 10px 0 !important;
+}
+
+.filter__flex--mod .filter__button {
+  margin-right: 8px;
+  background: #f7f8fb;
+}
+
+.filter__flex--mod .button {
+  padding: 10px 20px;
+  height: 40px;
+  min-width: 224px;
+  margin-left: 16px;
+}
+
+
+.filter input[type=radio]:checked+label {
+  background: #C70000;
+}
+
+.ownership-form {}
+
+.ownership-form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ownership-form li:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.ownership-form label {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1;
+  color: #28303D;
+  background-color: #fff;
+  padding: 8px 24px;
+  border-radius: 24px;
+  min-height: 48px;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.modal--mod {
+  max-width: 480px;
+}
+
+.ownership-form input:checked+label {
+  background-color: #C70000;
+  color: #ffffff;
+}
+
+.modal--mod .close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal--mod .close-btn svg {
+  position: absolute;
+}
+
+.modal--mod .title {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+/* старая и новая цена  */
+.hero__content del {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-decoration-line: line-through;
+  color: #28303D;
+  display: block;
+}
+
+.rate-card__bottom del {
+  margin-top: -18px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.tarif-details__photo {
+  max-height: 608px;
+  margin-bottom: 50px;
+}
+
+.tarif-details__photo img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tarif-promo__photo {}
+
+.tarif-promo__photo {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  background-color: #fff;
+  margin-bottom: 12px;
+}
+
+.tarif-promo__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: auto;
+
+}
+
+.rate-card__title--mod::after {
+  display: none;
+}
+
+.rate-card__bottom .button {
+  margin-top: 32px;
+  width: 100%;
+}
+
+.equip__decorate::before {
+  top: 6px;
+  position: relative;
+}
+
+.equip__decorate {
+  align-items: flex-start;
+}
+
+.equip__decorate-grid {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: 1fr;
+}
+
+.tariff-long-item__details {
+  flex-grow: 2;
+  margin-right: 32px;
+}
+
+.tariff-long-item__channels {
+  flex-grow: 2;
+  margin-right: 32px;
+}
+
+.tariff-long-item__price {
+  margin-left: 0;
+}

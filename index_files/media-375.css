@@ -1,0 +1,15 @@
+.header__mobile-buttons {
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+/* .footer__buttons {
+  grid-template-columns: 1fr;
+  gap: 16px;
+} */
+
+@media (max-width: 370px) {
+  .mob-hide {
+    display: none;
+  }
+}

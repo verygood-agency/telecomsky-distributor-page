@@ -1,0 +1,29 @@
+.hero__content--mod {
+  max-width: initial;
+  margin-right: initial;
+}
+
+.rates__list {
+  grid-template-columns: 1fr 1fr;
+}
+
+.about__list {
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+.about__content {
+  grid-template-columns: 1fr;
+}
+
+.offers {
+  padding: 48px 0 32px;
+}
+.offers__list {
+  grid-template-columns: 1fr 1fr;
+}
+
+.pagination__link--text {
+  padding: 12px 24px;
+  margin: 0;
+}

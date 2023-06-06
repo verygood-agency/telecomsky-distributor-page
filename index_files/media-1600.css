@@ -1,0 +1,29 @@
+.button--slider {
+  width: 64px;
+  height: 64px;
+  top: calc(50% - 7px);
+}
+.button--slider::after {
+  width: 16px;
+  height: 32px;
+}
+
+.slider .button--slider.next {
+  right: 8px;
+}
+.slider .button--slider.prev {
+  left: 8px;
+}
+
+@media (max-width: 1500px) {
+  /* .tarif-details__grid {
+    grid-template-columns: 1fr;
+  } */
+  .tarif-details .sticky {
+    position: initial;
+  }
+  .solo-slider__left .swiper-slide img {
+    max-height: 520px;
+    object-fit: contain;
+  }
+}

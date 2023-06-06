@@ -1,0 +1,33 @@
+.about__list {
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.contacts {
+  padding-top: 56px;
+}
+
+.contacts__grid {
+  grid-template-columns: 1fr;
+}
+
+.contacts .map__content {
+  height: 350px;
+}
+
+.contacts .contacts__button {
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.contacts .button--transparent {
+  margin-top: 20px;
+}
+
+.mobile-nivigation__support-grid {
+  gap: 0 12px;
+}
+
+.mobile-nivigation__support-grid a {
+  font-size: 14px;
+}
