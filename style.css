@@ -6,6 +6,7 @@
 }
 .distributor-page .header {
   padding: 32px 0;
+  position: absolute;
 }
 .distributor-page .header__logo {
   width: 368px;
